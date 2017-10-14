@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MultipleChoice from './components/MultipleChoice';
-import FreeText from './components/FreeText';
+import CharacterForm from './components/CharacterForm'
 
 const apiUrl = 'http://localhost:3001/';
 //const choices = [{id:1, name:"Skill 1"}];
@@ -9,6 +8,5 @@ const apiUrl = 'http://localhost:3001/';
 ReactDOM.render(
     <div>
     <p>Hello</p>
-    <FreeText title="Name" name="Name"/>
-    <MultipleChoice url={apiUrl + 'skills'} title="Skills"/>
+    <CharacterForm url ={apiUrl}/>
 </div>, document.getElementById('root'));
