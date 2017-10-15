@@ -37,4 +37,4 @@ var CharacterTypeSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('CharacterType', CharacterTypeSchema);
+module.exports = mongoose.model('CharacterType', CharacterTypeSchema, "types");

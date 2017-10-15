@@ -15,4 +15,4 @@ var FocusSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Focus', FocusSchema);
+module.exports = mongoose.model('Focus', FocusSchema, "foci");
