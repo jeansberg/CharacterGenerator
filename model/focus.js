@@ -12,10 +12,6 @@ var FocusSchema = new Schema({
     description: {
         type: String,
         required: true
-    },
-    ability: {
-        type: Schema.Types.ObjectId,
-        ref: "Ability"
     }
 });
 
