@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CharacterForm from './components/CharacterForm'
+import CharacterSheet from './components/CharacterSheet'
 
 const apiUrl = 'http://localhost:3001/';
-//const choices = [{id:1, name:"Skill 1"}];
 
 ReactDOM.render(
     <div>
-    <p>Hello</p>
-    <CharacterForm url ={apiUrl}/>
+        <p>Hello</p>
+        <CharacterSheet url={apiUrl} />
 
-</div>, document.getElementById('root'));
+    </div>, document.getElementById('root'));

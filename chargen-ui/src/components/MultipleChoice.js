@@ -17,6 +17,7 @@ class MultipleChoice extends Component {
                     <option key={item.name} value={item.id}>{item.name}</option>
                 );
                 this.setState({ items: items });
+                this.props.onChange(this.props.name, this.state.items[0].key)
             })
     }
     componentDidMount() {

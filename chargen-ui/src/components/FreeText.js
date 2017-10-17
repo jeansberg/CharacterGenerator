@@ -18,5 +18,4 @@ class FreeText extends Component {
     }
 }
 
-
 export default FreeText;
