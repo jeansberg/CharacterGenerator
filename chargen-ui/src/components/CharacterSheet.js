@@ -53,8 +53,8 @@ class CharacterSheet extends Component {
         const selectedAbilities = this.state.selectedAbilities;
         return (
             <div className="row">
-                 <div className="col-sm-6">
-                <CharacterForm
+                <div className="col-sm-6">
+                    <CharacterForm
                     url={this.url}
                     name={name}
                     type={type}
@@ -67,13 +67,13 @@ class CharacterSheet extends Component {
                     handleAbilityChange={this.handleAbilityChange}
                     handleMajorChange={this.handleMajorChange}/>
                     </div>
-                    <div className="col-sm-6">
-                <CharacterDescription
+                <div className="col-sm-6">
+                    <CharacterDescription
                     name={name}
                     type={type}
                     descriptor={descriptor}
                     focus={focus}/>
-                    </div>
+                </div>
             </div>
         );
     }

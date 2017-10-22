@@ -23,7 +23,7 @@ class CharacterForm extends Component {
             <div>
                 <form>
                 <div className="card">
-                <h4 className="card-header">Fundamental Choices</h4>
+                <h4 className="card-header">Character Creation</h4>
                     <div className="card-body">
                     <h6 className="card-subtitle mb-2 text-muted">The main choices that will define your character</h6>
                         <FreeText
@@ -58,9 +58,8 @@ class CharacterForm extends Component {
                     </div>
                 </div>
                 <div className="card">
-                    <h4 className="card-header">Skills and Abilities</h4>
                 <div className="card-body">
-                <h6 className="card-subtitle mb-2 text-muted">The skills and abilities your character possesses</h6>   {type === 'Glaive' && <MultipleChoice
+                <h6 className="card-subtitle mb-2 text-muted">The skills and abilities your character can use</h6>   {type === 'Glaive' && <MultipleChoice
                             name="skill"
                             title="Skill"
                             value={selectedSkill}
@@ -83,9 +82,9 @@ class CharacterForm extends Component {
                             allowMultiple={true}
                             numChoices={this.abilityChoices}
                             onChange={this.handleAbilityChange}/>
-                            <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary">Save Character</button>
+                            <div className="form-group row">
+                            <div className="col-sm-10">
+                                <button type="submit" className="btn btn-primary">Save Character</button>
                             </div>
                             </div>
                     </div>

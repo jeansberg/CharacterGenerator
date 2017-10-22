@@ -29,7 +29,7 @@ class MultipleChoice extends Component {
     render() {
         return (
             <div className="form-group row">
-                <label for={this.props.name} class="col-sm-2 col-form-label">{this.props.title}:</label>
+                <label htmlFor={this.props.name} className="col-sm-2 col-form-label">{this.props.title}:</label>
                 <div className="col-sm-5">
                     <select className="col-sm-12" name={this.props.name}
                         value={this.props.value}
@@ -38,7 +38,7 @@ class MultipleChoice extends Component {
                         {this.state.items}
                     </select>
                 </div>
-                <small class="col" id={this.props.name+".helpText"} class="form-text text-muted">
+                <small id={this.props.name+".helpText"} className="form-text text-muted">
                 {this.props.helpText}
                 </small>
             </div>
