@@ -10,9 +10,11 @@ class FreeText extends Component {
     }
     render() {
         return (
-            <div>
-                <div>{this.props.title}</div>
-                <input type="text" name={this.props.name} value={this.props.value} onChange={this.handleInputChange} />
+            <div className="form-group row">
+                    <label for ={this.props.id} className="col-sm-2 col-form-label">{this.props.title}:</label>
+                    <div className="col-sm-5"> 
+                    <input type="text" className="col-sm-12" id={this.props.name} name={this.props.name} value={this.props.value} onChange={this.handleInputChange}/>
+                    </div>
             </div>
         );
     }

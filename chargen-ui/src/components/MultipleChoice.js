@@ -28,15 +28,21 @@ class MultipleChoice extends Component {
     }
     render() {
         return (
-            <div>
-                <p>{this.props.title}</p>
-                <select name={this.props.name}
-                    value={this.props.value}
-                    multiple={this.props.allowMultiple}
-                    onChange={this.handleInputChange}>
-                    {this.state.items}
-                </select>
-            </div>);
+            <div className="form-group row">
+                <label for={this.props.name} class="col-sm-2 col-form-label">{this.props.title}:</label>
+                <div className="col-sm-5">
+                    <select className="col-sm-12" name={this.props.name}
+                        value={this.props.value}
+                        multiple={this.props.allowMultiple}
+                        onChange={this.handleInputChange}>
+                        {this.state.items}
+                    </select>
+                </div>
+                <small class="col" id={this.props.name+".helpText"} class="form-text text-muted">
+                {this.props.helpText}
+                </small>
+            </div>
+            );
     }
 }
 
