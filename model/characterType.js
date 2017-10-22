@@ -34,29 +34,7 @@ var CharacterTypeSchema = new Schema({
     cypherUse: {
         type: Number,
         required: true
-    },
-    abilities: {
-        type: [{
-            type: Schema.Types.ObjectId,
-            ref: "Ability"
-        }],
-        required: true
-    },
-    skills: {
-        type: [{
-            type: Schema.Types.ObjectId,
-            ref: "Skill",
-            level: Number
-        }],
-        required: true
-    },
-    equipment: {
-        type: [{
-            name: String,
-            type: String
-        }],
-        required: true
-    },
+    }
 });
 
-module.exports = mongoose.model('CharacterType', CharacterTypeSchema);
+module.exports = mongoose.model('CharacterType', CharacterTypeSchema, "types");

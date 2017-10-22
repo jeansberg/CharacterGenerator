@@ -12,11 +12,7 @@ var FocusSchema = new Schema({
     description: {
         type: String,
         required: true
-    },
-    ability: {
-        type: Schema.Types.ObjectId,
-        ref: "Ability"
     }
 });
 
-module.exports = mongoose.model('Focus', FocusSchema);
+module.exports = mongoose.model('Focus', FocusSchema, "foci");
