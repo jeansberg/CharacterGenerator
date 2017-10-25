@@ -56,3 +56,5 @@ typings/
 
 # dotenv environment variables file
 .env
+
+chargen-ui/public/bootstrap/dist
